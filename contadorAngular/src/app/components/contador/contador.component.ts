@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./contador.component.css']
 })
 export class ContadorComponent {
+  contador: number = 0;
 
+  incrementar() {
+    this.contador++;
+  }
+  decrementar() {
+    this.contador--;
+  }
 }

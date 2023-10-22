@@ -1,6 +1,16 @@
 <p>1 - interpolation - chaves duplas com o nome da variável</p>
 <img src="{{imgURL}}" alt="">
 <a href="{{url}}" target="_blank" rel="noopener noreferrer">devmedia.com.br</a>
+
 <p>2 - property biding - colchetes no nome do atributo </p>
 <img [src]="imgURL">
 <a [href]="url" target="_blank" rel="noopener noreferrer">devmedia.com.br</a>
+
+<p>3 - diretivas - ngIf - testando com toggle</p>
+<button (click)="mostrar()">mostrar/esconder conteúdo</button>
+<span *ngIf="valorAtual">Mostrando conteúdo com ngIf</span>
+
+<p>4 - ngFor - lista de livros</p>
+<ul>
+  <li *ngFor="let livro of livros">{{livro}}</li>
+</ul>

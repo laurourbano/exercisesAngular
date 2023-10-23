@@ -1,0 +1,10 @@
+<div>
+  <p>Componente Pai</p>
+  <app-filho *ngFor="let nome of nomes" [nome]="nome"></app-filho>
+</div>
+
+<div>
+  <app-filho #variavel></app-filho>
+  <p>{{variavel.time}}</p>
+</div>
+

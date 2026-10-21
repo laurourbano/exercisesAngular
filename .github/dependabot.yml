@@ -1,7 +1,11 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/"
+    directories:
+      - "/contadorAngular"
+      - "/interacao-entre-componentes"
+      - "/reactiveForms"
+      - "/templateDriven"
     target-branch: "develop"
     schedule:
       interval: "weekly"
